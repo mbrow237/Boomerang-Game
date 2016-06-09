@@ -15,10 +15,15 @@
       <sprite>sprites\spr_player_idle_right</sprite>
       <sprite>sprites\spr_player_walking_down</sprite>
       <sprite>sprites\spr_player_idle_down</sprite>
+      <sprite>sprites\spr_player_throwing_up</sprite>
+      <sprite>sprites\spr_player_throwing_down</sprite>
+      <sprite>sprites\spr_player_throwing_left</sprite>
+      <sprite>sprites\spr_player_throwing_right</sprite>
     </sprites>
     <sprites name="Objects">
       <sprites name="Boomerang">
         <sprite>sprites\spr_boomerang_first</sprite>
+        <sprite>sprites\spr_boomerang_second</sprite>
       </sprites>
     </sprites>
   </sprites>
@@ -29,6 +34,9 @@
       <object>objects\obj_player_1</object>
     </objects>
   </objects>
+  <rooms name="rooms">
+    <room>rooms\room_test</room>
+  </rooms>
   <help>
     <rtf>help.rtf</rtf>
   </help>
