@@ -23,8 +23,10 @@
     <sprites name="Objects">
       <sprites name="Boomerang">
         <sprite>sprites\spr_boomerang_first</sprite>
+        <sprite>sprites\spr_boomerang_mask</sprite>
         <sprite>sprites\spr_boomerang_second</sprite>
       </sprites>
+      <sprite>sprites\spr_wall</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background"/>
@@ -33,6 +35,11 @@
     <objects name="Player">
       <object>objects\obj_player_1</object>
     </objects>
+    <objects name="Weapon">
+      <object>objects\obj_boomerang</object>
+    </objects>
+    <object>objects\obj_controller</object>
+    <object>objects\obj_wall</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room_test</room>
