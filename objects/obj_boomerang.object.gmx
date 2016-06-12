@@ -56,23 +56,23 @@ wallContact = false;
     {
         if (throwDirection == "down")
         {
-            throw_y = 3;
+            throw_y = 2;
         }
         if (throwDirection == "up")
         {
-            throw_y = -3;
+            throw_y = -2;
         }
         if (throwDirection == "right")
         {
-            throw_x = 3;
+            throw_x = 2;
         }
         if (throwDirection == "left")
         {
-            throw_x = -3;
+            throw_x = -2;
         }                        
 }
-x += throw_x;
-y += throw_y;
+hspeed = throw_x;
+vspeed = throw_y;
 </string>
           </argument>
         </arguments>
