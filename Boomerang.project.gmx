@@ -37,6 +37,7 @@
     </objects>
     <objects name="Weapon">
       <object>objects\obj_boomerang</object>
+      <object>objects\obj_boomerang_return</object>
     </objects>
     <object>objects\obj_controller</object>
     <object>objects\obj_wall</object>
