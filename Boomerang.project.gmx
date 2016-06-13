@@ -28,9 +28,18 @@
       </sprites>
       <sprite>sprites\spr_wall</sprite>
     </sprites>
+    <sprites name="Enemy">
+      <sprite>sprites\spr_enemy_slime_walk</sprite>
+      <sprite>sprites\spr_enemy_slime_stun</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background"/>
-  <paths name="paths"/>
+  <paths name="paths">
+    <paths name="Enemy">
+      <path>paths\path_enemy_death_left</path>
+      <path>paths\path_enemy_death_right</path>
+    </paths>
+  </paths>
   <objects name="objects">
     <objects name="Player">
       <object>objects\obj_player_1</object>
@@ -39,8 +48,13 @@
       <object>objects\obj_boomerang</object>
       <object>objects\obj_boomerang_return</object>
     </objects>
-    <object>objects\obj_controller</object>
-    <object>objects\obj_wall</object>
+    <objects name="Enemy">
+      <object>objects\obj_enemy_slime</object>
+    </objects>
+    <objects name="Other">
+      <object>objects\obj_controller</object>
+      <object>objects\obj_wall</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\room_test</room>

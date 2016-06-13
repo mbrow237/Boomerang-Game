@@ -141,7 +141,7 @@ if (!(keyboard_check(vk_up))&amp;&amp;!(keyboard_check(vk_right))&amp;&amp;!(key
 if (keyboard_check(vk_space) &amp;&amp; attacking == false &amp;&amp; useWeapon == true &amp;&amp; canMove == true)
 {
     canMove = false;
-    //useWeapon = false;
+    useWeapon = false;
     attacking = true;
     var boom;
     boom = instance_create(self.x,self.y,obj_boomerang);
@@ -246,6 +246,29 @@ if (player_direction == "down" &amp;&amp; isMoving == false &amp;&amp; canMove =
         </arguments>
       </action>
     </event>
+    <event eventtype="4" ename="obj_boomerang_return">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>other</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>instance_destroy();
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="8" enumb="64">
       <action>
         <libid>1</libid>
@@ -300,6 +323,34 @@ if (player_direction == "down" &amp;&amp; isMoving == false &amp;&amp; canMove =
           <argument>
             <kind>0</kind>
             <string>16</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>514</id>
+        <kind>0</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_draw_text</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>2</kind>
+            <string>'Can Use Boomerang: ' + string(useWeapon)</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>256</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>0</string>
           </argument>
         </arguments>
       </action>
