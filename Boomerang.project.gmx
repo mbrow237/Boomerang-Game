@@ -19,6 +19,10 @@
       <sprite>sprites\spr_player_throwing_down</sprite>
       <sprite>sprites\spr_player_throwing_left</sprite>
       <sprite>sprites\spr_player_throwing_right</sprite>
+      <sprite>sprites\spr_player_death_1</sprite>
+      <sprite>sprites\spr_player_death_2</sprite>
+      <sprite>sprites\spr_player_death_3</sprite>
+      <sprite>sprites\spr_player_mask</sprite>
     </sprites>
     <sprites name="Objects">
       <sprites name="Boomerang">
@@ -27,6 +31,7 @@
         <sprite>sprites\spr_boomerang_second</sprite>
       </sprites>
       <sprite>sprites\spr_wall</sprite>
+      <sprite>sprites\spr_boomerang_refresh</sprite>
     </sprites>
     <sprites name="Enemy">
       <sprite>sprites\spr_enemy_slime_walk</sprite>
@@ -54,6 +59,7 @@
     <objects name="Other">
       <object>objects\obj_controller</object>
       <object>objects\obj_wall</object>
+      <object>objects\obj_boomerang_refresh</object>
     </objects>
   </objects>
   <rooms name="rooms">

@@ -53,6 +53,7 @@ wallContact = false;
           <argument>
             <kind>1</kind>
             <string>obj_player_1.useWeapon = true;
+instance_create(obj_player_1.x,obj_player_1.y,obj_boomerang_refresh);
 </string>
           </argument>
         </arguments>
