@@ -30,6 +30,7 @@ stun = false;
 stunTimer = 90;
 death = false;
 dying = false;
+path_start(path_enemy_movement_vertical,2,path_action_reverse,0);
 </string>
           </argument>
         </arguments>
@@ -75,7 +76,8 @@ dying = false;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (stun == false &amp;&amp; death == false &amp;&amp; dying == false)
+            <string>///Stun and Death
+if (stun == false &amp;&amp; death == false &amp;&amp; dying == false)
     {
         sprite_index = spr_enemy_slime_walk;
     }
@@ -101,7 +103,8 @@ if (death == true &amp;&amp; dying == false)
 
 if (stun == true &amp;&amp; death == false)
     {
-        sprite_index = spr_enemy_slime_stun;  
+        sprite_index = spr_enemy_slime_stun;
+        path_end();  
     }    
     
 </string>

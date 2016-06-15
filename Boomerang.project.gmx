@@ -43,6 +43,8 @@
     <paths name="Enemy">
       <path>paths\path_enemy_death_left</path>
       <path>paths\path_enemy_death_right</path>
+      <path>paths\path_enemy_movement_vertical</path>
+      <path>paths\path_enemy_movement_horizontal</path>
     </paths>
   </paths>
   <objects name="objects">
@@ -64,6 +66,7 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\room_test</room>
+    <room>rooms\room_test_2</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

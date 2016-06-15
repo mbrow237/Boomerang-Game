@@ -82,19 +82,19 @@ boomReturn.return_y = throw_y*-1;
     {
         if (throwDirection == "down")
         {
-            throw_y = 2;
+            throw_y = 3;
         }
         if (throwDirection == "up")
         {
-            throw_y = -2;
+            throw_y = -3;
         }
         if (throwDirection == "right")
         {
-            throw_x = 2;
+            throw_x = 3;
         }
         if (throwDirection == "left")
         {
-            throw_x = -2;
+            throw_x = -3;
         }                        
 }
 
@@ -107,19 +107,19 @@ if (wallContact == false)
     {
         if (hspeed &gt; 0)
             {
-                hspeed -= 0.1;
+                hspeed -= 0.25;
             }
         if (hspeed &lt; 0)
             {
-                hspeed += 0.1;
+                hspeed += 0.25;
             }
         if (vspeed &gt; 0)
             {
-                vspeed -= 0.1;
+                vspeed -= 0.25;
             }
         if (vspeed &lt; 0)
             {
-                vspeed += 0.1;
+                vspeed += 0.25;
             }
 }
 
